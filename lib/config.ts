@@ -1,6 +1,14 @@
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 import type { ChatKitOptions } from "@openai/chatkit";
 
+import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Algernon",
+  description: "Algernon váš knižný radca",
+};
+
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
 
