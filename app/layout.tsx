@@ -21,7 +21,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-       <div>Algernon</div> 
         {children}</body>
     </html>
   );
