@@ -1,4 +1,5 @@
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
+import type { ChatKitOptions } from "@openai/chatkit";
 
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
@@ -7,15 +8,25 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "What can you do?",
-    prompt: "What can you do?",
+    label: "Ako používať tento chat?",
+    prompt: "Ako používať tento chat?",
     icon: "circle-question",
+  },
+  {
+    icon: "book-open",
+    label: "Odporuč mi nejaké romantasy novinky.",
+    prompt: "Odporuč mi nejaké romantasy novinky.",
+  },
+  {
+    icon: "book-open",
+    label: "Mám rád temné detektívky. Ktoré sú najlepšie?",
+    prompt: "Mám rád temné detektívky. Ktoré sú najlepšie?",
   },
 ];
 
-export const PLACEHOLDER_INPUT = "Ask anything...";
+export const PLACEHOLDER_INPUT = "Spýtaj sa niečo...";
 
-export const GREETING = "How can I help you today?";
+export const GREETING = "Ahoj, som tvoj knižný asistent.";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
@@ -25,11 +36,19 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: theme === "dark" ? -1 : -4,
     },
     accent: {
-      primary: theme === "dark" ? "#f1f5f9" : "#0f172a",
+      primary: "#990000",
       level: 1,
     },
   },
   radius: "round",
-  // Add other theme options here
-  // chatkit.studio/playground to explore config options
+  density: "compact",
 });
+
+export const options: Partial<ChatKitOptions> = {
+  composer: {
+    placeholder: PLACEHOLDER_INPUT,
+    attachments: {
+      enabled: false,
+    },
+  },
+};
