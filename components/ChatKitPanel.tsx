@@ -280,7 +280,7 @@ export function ChatKitPanel({
     },
     threadItemActions: {
       // BX
-      feedback: true,
+      feedback: false,
     },
     onClientTool: async (invocation: {
       name: string;
