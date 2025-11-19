@@ -34,8 +34,8 @@ body {
 }
 
 main > div > div.relative {
-  height: 97vh !important;
-  padding-top: 2 !important;
+  height: 100vh !important;
+  padding-top: 0 !important;
 }
 
 main {
