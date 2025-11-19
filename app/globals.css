@@ -32,3 +32,12 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+main > div > div.relative {
+  height: 100vh !important;
+  padding-top: 0 !important;
+}
+
+main {
+  justify-content: start !important;
+}
