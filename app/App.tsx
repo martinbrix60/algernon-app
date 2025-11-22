@@ -28,7 +28,7 @@ export default function App() {
 
       <div className="relative mx-auto w-full max-w-5xl pt-20">
 
-        <Link href="/" className="absolute top-2 left-2 z-10">
+        <Link href="/" className="absolute top-2 right-2 z-10">
           <Image src={Icon} alt="Logo" width={232} height={46} />
         </Link>
 
