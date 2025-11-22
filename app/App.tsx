@@ -6,7 +6,7 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 
 import Link from "next/link";
 import Image from "next/image";
-import Icon from "./icon.png";
+import Icon from "./albatrosmedia.png";
 
 export default function App() {
   const { scheme, setScheme } = useColorScheme();
