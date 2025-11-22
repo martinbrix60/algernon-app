@@ -22,9 +22,9 @@ export default function App() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-end bg-slate-100 dark:bg-slate-950">
-      <a href="/" className="absolute top-4 left-4 z-10">
-        <img src={Icon.src} alt="Logo" className="w-12 h-auto" />
-      </a>
+      <Link href="/" className="absolute top-4 left-4 z-10">
+        <Image src={Icon} alt="Logo" width={48} height={48} />
+      </Link>
       <div className="mx-auto w-full max-w-5xl">
         <ChatKitPanel
           theme={scheme}
