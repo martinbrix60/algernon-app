@@ -6,7 +6,7 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 
 import Link from "next/link";
 import Image from "next/image";
-import Icon from "./icon.png";
+import Icon from "./albatrosmedia.png";
 
 export default function App() {
   const { scheme, setScheme } = useColorScheme();
@@ -29,7 +29,7 @@ export default function App() {
       <div className="relative mx-auto w-full max-w-5xl pt-20">
 
         <Link href="/" className="absolute top-4 left-0 z-10">
-          <Image src={Icon} alt="Logo" width={48} height={48} />
+          <Image src={Icon} alt="Logo" width={232} height={46} />
         </Link>
 
         <ChatKitPanel
