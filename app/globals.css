@@ -53,7 +53,7 @@ main {
   left: 10px;     /* odsadenie zľava */
   width: 50px;    /* šírka loga */
   height: 50px;   /* výška loga, môžeš dať auto */
-  background-image: url('icon.png'); /* cesta k logu */
+  background-image: url('./icon.png'); /* cesta k logu */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
