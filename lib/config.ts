@@ -44,7 +44,7 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: theme === "dark" ? -1 : -4,
     },
     accent: {
-      primary: "#990000",
+      primary: "#181818",
       level: 1,
     },
   },
