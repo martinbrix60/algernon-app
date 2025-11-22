@@ -29,7 +29,7 @@ export default function App() {
       <div className="relative mx-auto w-full max-w-5xl pt-20">
 
         <Link href="/" className="absolute top-3 left-3 z-10">
-          <Image src={Icon} alt="Logo" width={36} height={36} />
+          <Image src={Icon} alt="Logo" width={232} height={46} />
         </Link>
 
         <ChatKitPanel
