@@ -25,10 +25,13 @@ export default function App() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-end bg-slate-100 dark:bg-slate-950">
-      <Link href="/" className="absolute top-4 left-4 z-10">
-        <Image src={Icon} alt="Logo" width={48} height={48} />
-      </Link>
+
       <div className="mx-auto w-full max-w-5xl">
+        
+        <Link href="/" className="absolute top-4 left-4 z-10">
+          <Image src={Icon} alt="Logo" width={48} height={48} />
+        </Link>
+        
         <ChatKitPanel
           theme={scheme}
           onWidgetAction={handleWidgetAction}
