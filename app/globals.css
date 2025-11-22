@@ -41,3 +41,28 @@ main > div > div.relative {
 main {
   justify-content: start !important;
 }
+
+.chat-wrapper {
+  position: relative;
+}
+
+.chat-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 10px;      /* odsadenie odhora */
+  left: 10px;     /* odsadenie zľava */
+  width: 50px;    /* šírka loga */
+  height: 50px;   /* výška loga, môžeš dať auto */
+  background-image: url('icon.png'); /* cesta k logu */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+/* ============================= */
+/* Uisti sa, že Chat obsah nezačne pod logom */
+/* ============================= */
+main > div > div.relative > * {
+  padding-top: 70px !important; /* výška loga + odsadenie */
+}
