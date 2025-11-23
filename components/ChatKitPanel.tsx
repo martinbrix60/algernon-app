@@ -274,12 +274,11 @@ export function ChatKitPanel({
     composer: {
       placeholder: PLACEHOLDER_INPUT,
       attachments: {
-        // Enable attachments BX
-        enabled: false,
+        // Enable attachments
+        enabled: true,
       },
     },
     threadItemActions: {
-      // BX
       feedback: false,
     },
     onClientTool: async (invocation: {
@@ -360,7 +359,7 @@ export function ChatKitPanel({
         fallbackMessage={
           blockingError || !isInitializingSession
             ? null
-            : "Algernon váš knižný poradca ..." // BX
+            : "Loading assistant session..."
         }
         onRetry={blockingError && errors.retryable ? handleResetChat : null}
         retryLabel="Restart chat"
