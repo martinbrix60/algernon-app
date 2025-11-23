@@ -24,7 +24,6 @@ export default function App() {
   }, []);
 
   return (
-    
     <main className="relative flex min-h-screen flex-col items-center justify-start bg-slate-100 dark:bg-slate-950">
 
       <div className="relative mx-auto w-full max-w-5xl pt-20">
