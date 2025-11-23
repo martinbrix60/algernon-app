@@ -24,8 +24,10 @@ export default function App() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-end bg-slate-100 dark:bg-slate-950">
-      <div className="mx-auto w-full max-w-5xl">
+    
+    <main className="relative flex min-h-screen flex-col items-center justify-start bg-slate-100 dark:bg-slate-950">
+
+      <div className="relative mx-auto w-full max-w-5xl pt-20">
 
         <Link href="/" className="absolute top-3 left-3 z-10">
           <Image src={Icon} alt="Logo" width={232} height={46} />
