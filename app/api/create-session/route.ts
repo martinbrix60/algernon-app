@@ -1,6 +1,6 @@
 import { WORKFLOW_ID } from "@/lib/config";
 
-
+export const runtime = "edge";
 
 interface CreateSessionRequestBody {
   workflow?: { id?: string | null } | null;
@@ -196,8 +196,7 @@ function serializeSessionCookie(value: string): string {
     "Path=/",
     `Max-Age=${SESSION_COOKIE_MAX_AGE}`,
     "HttpOnly",
-    "SameSite=None",
-    "Secure", 
+    "SameSite=Lax",
   ];
 
   if (process.env.NODE_ENV === "production") {
