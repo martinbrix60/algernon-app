@@ -197,6 +197,7 @@ function serializeSessionCookie(value: string): string {
     `Max-Age=${SESSION_COOKIE_MAX_AGE}`,
     "HttpOnly",
     "SameSite=None",
+    "Secure", 
   ];
 
   if (process.env.NODE_ENV === "production") {
