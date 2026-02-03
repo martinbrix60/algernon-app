@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Algernon",
-  description: "Algernon váš knižný radca",
+  description: "Algernon – váš knižní rádce",
 };
 
 export const WORKFLOW_ID =
@@ -16,25 +16,25 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Ako používať tento chat?",
-    prompt: "Ako používať tento chat?",
+    label: "Jak používat tento chat?",
+    prompt: "Jak používat tento chat?",
     icon: "circle-question",
   },
   {
     icon: "book-open",
-    label: "Odporuč mi nejaké romantasy novinky.",
-    prompt: "Odporuč mi nejaké romantasy novinky.",
+    label: "Doporuč mi nějaké romantasy novinky.",
+    prompt: "Doporuč mi nějaké romantasy novinky.",
   },
   {
     icon: "book-open",
-    label: "Mám rád temné detektívky. Ktoré sú najlepšie?",
-    prompt: "Mám rád temné detektívky. Ktoré sú najlepšie?",
+    label: "Mám rád temné detektivky. Které jsou nejlepší?",
+    prompt: "Mám rád temné detektivky. Které jsou nejlepší?",
   },
 ];
 
-export const PLACEHOLDER_INPUT = "Spýtaj sa niečo...";
+export const PLACEHOLDER_INPUT = "Zeptej se na něco...";
 
-export const GREETING = "Ahoj, som tvoj knižný asistent.";
+export const GREETING = "Ahoj, jsem tvůj knižní asistent.";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
