@@ -34,7 +34,7 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
 
 export const PLACEHOLDER_INPUT = "Zeptej se na něco...";
 
-export const GREETING = "Ahoj, jsem tvůj knižní asistent.";
+export const GREETING = "Ahoj, jsem tvůj knižní asistent";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
