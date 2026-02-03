@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Algernon",
-  description: "Algernon váš knižný radca",
+  description: "Algernon – váš knižní rádce",
 };
 
 export default function RootLayout({
