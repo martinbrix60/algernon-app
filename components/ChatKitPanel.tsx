@@ -360,7 +360,7 @@ export function ChatKitPanel({
         fallbackMessage={
           blockingError || !isInitializingSession
             ? null
-            : "Algernon váš knižný poradca ..." // BX
+            : "Algernon váš knižní rádce" // BX
         }
         onRetry={blockingError && errors.retryable ? handleResetChat : null}
         retryLabel="Restart chat"
